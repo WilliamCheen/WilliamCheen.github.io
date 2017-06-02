@@ -4,7 +4,7 @@
   <title><![CDATA[宁静致远]]></title>
   <link href="http://williamcheen.github.io/atom.xml" rel="self"/>
   <link href="http://williamcheen.github.io/"/>
-  <updated>2017-06-02T13:33:09+08:00</updated>
+  <updated>2017-06-02T13:41:34+08:00</updated>
   <id>http://williamcheen.github.io/</id>
   <author>
     <name><![CDATA[WilliamChen]]></name>
@@ -12,5 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[使 Xcode8.x 支持基于 iOS7 系统的真机调试]]></title>
+    <link href="http://williamcheen.github.io/blog/20170602/shi-xcode8-dot-x-zhi-chi-ji-yu-ios7-xi-tong-de-zhen-ji-diao-shi/"/>
+    <updated>2017-06-02T13:37:45+08:00</updated>
+    <id>http://williamcheen.github.io/blog/20170602/shi-xcode8-dot-x-zhi-chi-ji-yu-ios7-xi-tong-de-zhen-ji-diao-shi</id>
+    <content type="html"><![CDATA[<h4>Xcode8.x 支持 iOS7 的真机调试</h4>
+
+<ul>
+<li>将 Xcode 7 里的 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport 文件拷贝到 Xcode 8.x 的相同文件夹下</li>
+<li>修改 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/SDKSettings.plist 文件里的 DefaultProperties\DEPLOYMENT_TARGET_SUGGESTED_VALUES，以此（从大到小的）增加相应的版本（7.0、7.1）</li>
+<li>重启 Xcode</li>
+</ul>
+
+]]></content>
+  </entry>
   
 </feed>

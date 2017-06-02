@@ -74,6 +74,50 @@
     <meta itemprop="url" content="http://williamcheen.github.io" />
       
       
+      
+        <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+          
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2017-06-02T13:37:45+08:00"  data-updated="true" itemprop="datePublished dateCreated">2017 年6 月2 日</time>
+        
+      </p>
+    
+    
+      <h2 class="entry-title" itemprop="name headline"><a href="/blog/20170602/shi-xcode8-dot-x-zhi-chi-ji-yu-ios7-xi-tong-de-zhen-ji-diao-shi/" itemprop="url">使 Xcode8.x 支持基于 iOS7 系统的真机调试</a></h2>
+    
+  </header>
+
+
+  <div class="entry-content clearfix" itemprop="articleBody description"><h4>Xcode8.x 支持 iOS7 的真机调试</h4>
+
+<ul>
+<li>将 Xcode 7 里的 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport 文件拷贝到 Xcode 8.x 的相同文件夹下</li>
+<li>修改 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/SDKSettings.plist 文件里的 DefaultProperties\DEPLOYMENT_TARGET_SUGGESTED_VALUES，以此（从大到小的）增加相应的版本（7.0、7.1）</li>
+<li>重启 Xcode</li>
+</ul>
+
+</div>
+  
+  
+
+
+        </article>
+      
     </div>
 
     <ul class="pager">
